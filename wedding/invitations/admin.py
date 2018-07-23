@@ -17,7 +17,7 @@ class InvitationAdmin(admin.ModelAdmin):
 
     def share(self, obj):
         url = self._get_invitation_url(obj)
-        telegram_url = f'https://telegram.me/ashare/url?url={url}'
+        telegram_url = f'https://telegram.me/share/url?url={url}'
         viber_url = f'http://viber://forward?text={url}'
         return format_html(
             f'<a class="button" href={telegram_url}>Telegram</a>&nbsp;'
