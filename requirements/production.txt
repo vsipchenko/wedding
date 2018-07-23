@@ -1,4 +1,5 @@
 -r base.txt
+dealer==2.0.5
 python3-memcached==1.51
 gunicorn==19.7.1
 boto==2.48.0
