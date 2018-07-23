@@ -13,12 +13,12 @@ class InvitationAdmin(admin.ModelAdmin):
 
     def _get_invitation_url(self, obj):
         site = Site.objects.get_current()
-        return f'http://{site.domain}{obj.detail_url}'
+        return f'https://{site.domain}{obj.detail_url}'
 
     def share(self, obj):
         url = self._get_invitation_url(obj)
         telegram_url = f'https://telegram.me/share/url?url={url}'
-        viber_url = f'http://viber://forward?text={url}'
+        viber_url = f'viber://forward?text={url}'
         return format_html(
             f'<a class="button" href={telegram_url}>Telegram</a>&nbsp;'
             f'<a class="button" href={viber_url}>Viber</a>'
