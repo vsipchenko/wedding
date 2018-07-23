@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <p>Date: {{ now|date }}</p>
+  <p>recepient: {{object.name}}</p>
+  <p>is_approved: {{object.is_approved}}</p>
+{% endblock %}
