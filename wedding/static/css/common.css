@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&subset=cyrillic');
+
+@font-face {
+ font-family: 'Monologue';
+ src: url(./monologue.ttf);
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(#cbbbab 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#cbbbab 15%, #f2e2d5 16%), #f2e2d5;
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+  font-family: 'Amatic SC', cursive;
+}
+
+header {
+  background-color: #d65679;
+  height: 50px;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+h3 {
+  padding: 2rem 0 0 0;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+}
+
+h4 {
+  color: #fff;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  width: 6%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col-md-6 {
+  float: left;
+  width: 50%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.heart.content-style {
+  width: 10%;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #6e6e86;
+  color: #d65679;
+  margin: 2% auto;
+  text-align: center;
+  line-height: 150%;
+}
+
+.heart.content-style:after {
+  content: "♥";
+  display: inline-block;
+  position: relative;
+  top: -0.5em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: #f2e2d5;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

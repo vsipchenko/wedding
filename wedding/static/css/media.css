@@ -1,0 +1,14 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .restaurant {
+    display: block;
+    width: 100%;
+  }
+  .event-list {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .heart.content-style {
+    width: 20%;
+    margin-top: 1em;
+  }
+}

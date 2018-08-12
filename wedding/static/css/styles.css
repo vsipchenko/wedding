@@ -1,0 +1,78 @@
+.header-bottom::before, .header-bottom::after {
+  content: '';
+}
+
+.header-bottom::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-size: 13px 100%;
+  background-image: linear-gradient(583deg, #d65679 50%, transparent 50%), linear-gradient(136deg, #d65679 50%, transparent 50%);
+  margin-top: 50px;
+  position: fixed;
+}
+
+.about {
+  padding-top: 150px;
+  background-image: url('https://wedpost.ru/uploads/3/1280_6c3c70893125e288f60da35907384065.jpg');
+  background-repeat: no-repeat;
+  min-height: 760px;
+  background-position: 50% 0px;
+}
+
+.about .header-button {
+  width: 250px;
+  padding: 0.6em;
+  border: 2px solid #fff;
+  margin: 2em auto;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+}
+
+.about .header-button a:hover {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(247, 188, 204);
+}
+
+.container#invitation-wrapper{
+  padding-bottom: 5rem;
+}
+
+.container#invitation-wrapper .invitation {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.photobook .album {
+  padding-left: 30px;
+  padding-right: 30px;
+  column-count: 2;
+  column-gap: 20px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.photobook .album .album-item {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.action-plan .content {
+  padding: 0 30px;
+}
+
+.action-plan .restaurant img {
+  width: 100%;
+}
+
+.action-plan .content .event-list {
+  font-size: 1.5rem;
+}
+
+.action-plan .content .event-list .event-block {
+  margin-top: 20px;
+}
