@@ -1,20 +1,27 @@
 {% load static from staticfiles %}
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
 <head>
-    <meta charset="utf-8">
-    <title>{% block title %}{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{% block meta-description %}{% endblock %}">
-    <meta name="author" content="{% block meta-author %}{% endblock %}">
-    <meta name="keywords" content="{% block meta-keywords %}{% endblock %}">
-    {% block extra-meta %}{% endblock %}
-    {% block extra-css %}{% endblock %}
+  <meta charset="utf-8">
+  <title>Виталий и Валерия</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block extra-css %}{% endblock %}
 </head>
+
 <body>
-    <div class="container">
-        {% block content %}{% endblock %}
-    </div>
-    {% block extra-js %}{% endblock %}
+  <header class="sticky"></header>
+  <section class="header-bottom"></section>
+  {% include "sections/about.html" %}
+  <div class="container" id="invitation-wrapper">
+    {% block content %}{% endblock %}
+    {% include "sections/newlyweds.html" %}
+  </div>
+  {% include "sections/photobook.html" %}
+  {% include "sections/actionplan.html" %}
+  {% block extra-js %}{% endblock %}
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="{% static 'js/smooth_scrolling.js' %}"></script>
 </body>
+
 </html>

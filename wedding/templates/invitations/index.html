@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <p>Date: {{ now|date }}</p>
-  <p>recepient: {{object.name}}</p>
-  <p>is_approved: {{object.is_approved}}</p>
+<div class="invitation text-center">
+  <p>{{object.gender_address}} {{object.name}}!</p>
+  <p>7 сентября может пройти как обычный день и не запомниться Вам ничем особенным…</p>
+  <p>А может стать одним из самых приятных дней не только для нас, но и для Вас!</p>
+  <p>Очень ждём Вас на счастливом празднике - нашей свадьбе!"</p>
+</div>
 {% endblock %}
