@@ -208,3 +208,5 @@ CSRF_COOKIE_HTTPONLY = True
 X_FRAME_OPTIONS = 'DENY'
 
 SITE_ID = 1
+
+USE_HTTPS = os.environ.get('USE_HTTPS', False)

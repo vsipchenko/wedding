@@ -6,7 +6,7 @@ from django.views.generic.detail import DetailView
 from .models import Invitation
 
 class InvitationDetailView(DetailView):
-    queryset = Invitation.objects.only('id', 'name', 'is_approved')
+    queryset = Invitation.objects.only('id', 'name', 'gender')
     template_name = 'invitations/index.html'
 
     def get_context_data(self, **kwargs):

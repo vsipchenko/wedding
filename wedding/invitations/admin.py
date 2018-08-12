@@ -8,12 +8,17 @@ from .models import Invitation
 @admin.register(Invitation)
 class InvitationAdmin(admin.ModelAdmin):
     search_fields = ('name',)
-    list_filter = ('is_approved', 'created_at', 'updated_at')
-    list_display = ('name', 'is_approved', 'share', 'link')
+    list_filter = ('created_at', 'updated_at')
+    list_display = ('name', 'share', 'link')
+
+    def _get_protocol(self):
+        from ..settings.base import USE_HTTPS
+        return 'https' if USE_HTTPS else 'http'
 
     def _get_invitation_url(self, obj):
+        protocol = self._get_protocol()
         site = Site.objects.get_current()
-        return f'https://{site.domain}{obj.detail_url}'
+        return f'{protocol}://{site.domain}{obj.detail_url}'
 
     def share(self, obj):
         url = self._get_invitation_url(obj)
