@@ -15,7 +15,7 @@
 
 .about {
   padding-top: 150px;
-  background-image: url('https://wedpost.ru/uploads/3/1280_6c3c70893125e288f60da35907384065.jpg');
+  background-image: url('https://lh3.googleusercontent.com/qtglzY6z51kniqJoNJ9vNnITuw7WcoNEJzgggImCV3zjezmXYWvvT4q5GBBGvA2bYNH_C_uyAOdA40nurZ1nH0WzVPQT5AdXVb6qoLd64o0ozpI6Vbk4gMXKzOyM5Vv7ORdZUqkRVx-qQdFwKl_uVDbKyimG-C70C2aI--2jHgN5aX7RgV87JZyQs03Gl3FOXH0td1q_xAwiHi1ZacI__hDGnHaEbNn5iQbshxY4Cg4KAW9vUoQTvuS0dScKCNVZ5DCISya_Ro9druFT64obL-YUacZrX-qVLmFs_N_KGV23UlCBfo0-8J7WGGf9SKKg-tvqiSokOHyKXm4Nfz08WAFvOsQ_L6ouRoqLzTa8-sogjxrL99vZurH3w0QKO9WRcA7hH69Dk4ynrQ_5lZXWKmfyzIHR7aFVoPu0sM-MxrgDlZDcRZD8P4VIDdUQCvvv1Y9M62yWturSWny4EGrDFY3oCzjofQYvv6lPv_jOBabFgmr5r2vxziJmg6QaGW8sSYIrI3YdP1THiIM4r0fP_9IFPet3R0q4klhpALqFSr2QVnNMY0uT4lRMd4DAk8YTnW-6TpJlhPi_PzEgorVpQK4mQpY-fLtylNba6so=w1270-h941-no');
   background-repeat: no-repeat;
   min-height: 760px;
   background-position: 50% 0px;
@@ -29,6 +29,7 @@
   font-size: 1.2em;
   color: #fff;
   font-family: 'Raleway', 'Helvetica', sans-serif;
+
 }
 
 .about .header-button a:hover {
@@ -42,9 +43,11 @@
 }
 
 .container#invitation-wrapper .invitation {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
 }
+
+.invitation{margin-bottom: 100px}
 
 .photobook .album {
   padding-left: 30px;
@@ -70,9 +73,24 @@
 }
 
 .action-plan .content .event-list {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
+.restaurant{
+    margin-right: 40px;
+}
 .action-plan .content .event-list .event-block {
   margin-top: 20px;
+}
+.young{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.young-name{
+  font-weight: bold;
+  padding: 2rem 0 0 0;
+    margin: 0 auto;
+    font-size: 2.1rem;
+    font-family: 'Amatic SC', cursive;
 }
